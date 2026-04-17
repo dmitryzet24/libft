@@ -6,11 +6,13 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:26:20 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/17 14:26:21 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/17 14:47:42 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strlowcase(char *str)
+#include "libft.h"
+
+char	*ft_tolower(char *str)
 {
 	int	i;
 

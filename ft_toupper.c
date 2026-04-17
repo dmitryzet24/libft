@@ -6,9 +6,11 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:24:08 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/17 14:25:39 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/17 14:47:41 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_toupper(char *str)
 {

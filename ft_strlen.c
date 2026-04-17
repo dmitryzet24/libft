@@ -6,9 +6,11 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:14:48 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/17 14:19:07 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/17 14:47:43 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

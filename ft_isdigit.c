@@ -6,9 +6,11 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 13:57:30 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/17 13:58:06 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/17 14:47:44 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(unsigned char *str)
 {
