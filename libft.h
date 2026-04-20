@@ -1,16 +1,14 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdio.h>
+#include <stdio.h> // for printf
 
-int	ft_isalpha(int c);
-//int		ft_isdigit(unsigned char *str);
-//unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
-//int		ft_strlen(char *str);
-//int		ft_strncmp(char *s1, char *s2, unsigned int n);
-//char	*ft_tolower(char *str);
-//char	*ft_toupper(char *str);
-
-
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlen(const char *s);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 #endif
