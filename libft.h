@@ -3,9 +3,15 @@
 
 #include <stdio.h> // for printf
 
+#define RED		"\033[1;31m"
+#define	GREEN	"\033[1;32m"
+#define RESET	"\033[0m"
+
+void	test_int_f_int();
+
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_toupper(int c);

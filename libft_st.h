@@ -10,12 +10,4 @@
 
 
 
-int	isalpha(int c);
-int	isdigit(int c);
-size_t strlcpy(char *dst, const char *src, size_t size)
-size_t	strlen(const char *s);
-int		strncmp(const char *s1, const char *s2, size_t n);
-int		toupper(int c);
-int		tolower(int c);
-
 #endif
