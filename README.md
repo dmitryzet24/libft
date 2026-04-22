@@ -1,6 +1,6 @@
-isalpha     |   2   |
-isdigit     |   2   |
-isalnum     |
+isalpha     |   +   |
+isdigit     |   +   |
+isalnum     |	+	|
 isascii     |
 isprint     |
 strlen      |   4   |

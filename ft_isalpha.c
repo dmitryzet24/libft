@@ -6,13 +6,13 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 13:39:39 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/20 13:22:36 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/22 20:35:27 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c) //returns the bitmask
+int	ft_isalpha(int c)
 {
 	if (!((c >= 'A' && c <= 'Z')
 			|| (c >= 'a' && c <= 'z')))
