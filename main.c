@@ -6,7 +6,7 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:03:02 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/24 19:36:40 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 19:54:53 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int	main(void)
 		//ft_memset TEST
 		//ft_bzero TEST
 		//ft_memmove TEST
+		//ft_strlcat TEST
 		return (0);
 		
 }
