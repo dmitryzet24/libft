@@ -6,13 +6,13 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:34:19 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/24 15:54:08 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 19:42:32 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
