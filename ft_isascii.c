@@ -6,9 +6,11 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:10:27 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/22 21:28:48 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 14:04:32 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

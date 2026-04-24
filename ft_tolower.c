@@ -6,24 +6,21 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:26:20 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/17 14:47:42 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 15:04:01 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_tolower(char *str)
+int	ft_tolower(int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
+		if (c >= 'A' && c <= 'Z')
 		{
-			str[i] += 32;
+			c += 32;
 		}
 		i++;
-	}
-	return (str);
+	return (c);
 }

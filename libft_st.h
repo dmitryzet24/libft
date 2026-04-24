@@ -6,7 +6,7 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 20:26:53 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/22 21:49:57 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 14:48:56 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 
 # include <string.h> 	// For strlcpy(), strlen(), strncmp()
 # include <ctype.h> 		// For isalpha(), isdigit(), tolower(), toupper()
-
 # include <stdio.h> // for printf
 
 # define RED		"\033[1;31m"

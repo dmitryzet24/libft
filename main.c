@@ -6,13 +6,12 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 21:03:02 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/22 22:02:08 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 16:05:37 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_st.h"
 #include "libft.h"
-
+#include "libft_st.h"
 
 int	main(void)
 {  	
@@ -30,6 +29,14 @@ int	main(void)
 		test_int_f_int(numbers, size, isalpha, "isalpha", ft_isalpha, "ft_isalpha");
 		test_int_f_int(numbers, size, isdigit, "isdigit", ft_isdigit, "ft_isdigit");
 		test_int_f_int(numbers, size, isascii, "isascii", ft_isascii, "ft_isascii");
+		test_int_f_int(numbers, size, isalnum, "isalnum", ft_isalnum, "ft_isalnum");
+		test_int_f_int(numbers, size, isprint, "isprint", ft_isprint, "ft_isprint");
+		test_int_f_int(numbers, size, toupper, "toupper", ft_toupper, "ft_toupper");
+		test_int_f_int(numbers, size, tolower, "tolower", ft_tolower, "ft_tolower");
+		//ft_strlen TEST
+		//ft_strncmp TEST
+		//ft_strcpy TEST
+		//ft_memset TEST
 		return (0);
 		
 }

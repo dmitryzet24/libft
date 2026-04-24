@@ -1,26 +1,26 @@
 isalpha     |   +   |
 isdigit     |   +   |
 isalnum     |	+	|
-isascii     |
-isprint     |
-strlen      |   4   |
+isascii     |	+	|
+isprint     |	+	|
+strlen      |   +   |
 memset      |
 bzero       |
 memcpy      |
 memmove     |
-strlcpy     |      |
+strlcpy     |   +   |
 strlcat     |
-toupper     |   2   |
-tolower     |   2   |
+toupper     |   +   |
+tolower     |   +   |
 strchr      |
 strrchr     |
-strncmp     |	3	|
+strncmp     |	+	|
 memchr      |
 memcmp      |
 strnstr     |
 atoi        |		|
 calloc      |
-strdup      |		|	
+strdup      |		|
 
 ft_substr
 char *ft_substr(char const *s, unsigned int start, size_t len);
