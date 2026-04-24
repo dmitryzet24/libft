@@ -6,27 +6,25 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 18:43:39 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/24 19:45:48 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/24 19:52:10 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*s;
 	unsigned char		*d;
-	size_t				i;
 
-	i = 0;
 	if ((dest == NULL) && (src == NULL))
 		return (NULL);
 	s = (const unsigned char *)src;
 	d = (unsigned char *)dest;
 	if (d < s)
 	{
-		while (i < n)
-		{
-			d[i++] = s[i];
-		}
+		while (n--)
+			*d++ = *s++;
 	}
 	else
 	{
