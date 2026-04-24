@@ -4,10 +4,10 @@ isalnum     |	+	|
 isascii     |	+	|
 isprint     |	+	|
 strlen      |   +   |
-memset      |
-bzero       |
-memcpy      |
-memmove     |
+memset      |	+	|
+bzero       |	+	|
+memcpy      |		|
+memmove     |	+	|
 strlcpy     |   +   |
 strlcat     |
 toupper     |   +   |
