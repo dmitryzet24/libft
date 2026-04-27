@@ -17,10 +17,10 @@ strrchr     |	+	|
 strncmp     |	+	|
 memchr      |	+	|
 memcmp      |	+	|
-strnstr     |	
-atoi        |	
-calloc      |	
-strdup      |	
+strnstr     |	+	|
+atoi        |	+	|
+calloc      |	+	|
+strdup      |	+	|
 
 ft_substr
 char *ft_substr(char const *s, unsigned int start, size_t len);
