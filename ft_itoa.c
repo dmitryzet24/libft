@@ -1,33 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 16:06:23 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 21:01:31 by dandrush         ###   ########.fr       */
+/*   Created: 2026/04/27 20:53:41 by dandrush          #+#    #+#             */
+/*   Updated: 2026/04/27 21:27:29 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-//The  memset()  function  fills  the  first  n  bytes of 
-// the memory area
-// pointed to by s with the constant byte c.
+#include <stdlib.h>
 
-
-void	*ft_memset(void *s, int c, size_t n)
+size_t	count_len(int n)
 {
-	size_t			i;
-	unsigned char	*ptr;
+	size_t	i;
+	long	n1;
 
 	i = 0;
-	ptr = (unsigned char *)s;
-	while (i < n)
+	n1 = (long)n;
+	if (n1 > 0)
 	{
-		ptr[i] = (unsigned char)c;
+		while (n1 > 0)
+		{
+			n1 /= 10;
+			i++;
+		}
+	}
+	else if (n1 == 0)
+		i = 1;
+	else
+	{
+		n1 *= -1;
+		while (n1 > 0)
+		{
+			n1 /= 10;
+			i++;
+		}
 		i++;
 	}
-	return (s);
+	return (i);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	int		temp;
+	int		i;
+	
+	str = (char *)malloc(sizeof(char) * (count_len(n) + 1));
+	if (!str)
+		return (NULL);
 }
