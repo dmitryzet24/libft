@@ -15,8 +15,8 @@ tolower     |	+	|
 strchr      |	+	|
 strrchr     |	+	|
 strncmp     |	+	|
-memchr      |	
-memcmp      |	
+memchr      |	+	|
+memcmp      |	+	|
 strnstr     |	
 atoi        |	
 calloc      |	

@@ -1,31 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 12:11:54 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 13:22:34 by dandrush         ###   ########.fr       */
+/*   Created: 2026/04/27 13:44:18 by dandrush          #+#    #+#             */
+/*   Updated: 2026/04/27 13:45:08 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char *strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned char	ch;
-	const char		*sl;
-
-	ch = (unsigned char)c;
-	sl = NULL;
-	while (1)
-	{
-		if ((unsigned char)*s == ch)
-			sl = s;
-		if (*s == '\0')
-			break ;
-		s++;
-	}
-	return ((char *)sl);
+	
 }
