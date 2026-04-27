@@ -1,25 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/17 14:14:48 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 16:00:49 by dandrush         ###   ########.fr       */
+/*   Created: 2026/04/27 15:25:41 by dandrush          #+#    #+#             */
+/*   Updated: 2026/04/27 16:02:27 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+int	ft_atoi(const char *nptr)
 {
-	size_t	i;
+	int	i;
+	int	res;
+	int	cnt_mns;
 
 	i = 0;
-	while (s[i] != '\0')
+	res = 0;
+	cnt_mns = 1;
+	while (nptr[i] == ' ')
+		i++;
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
+		if (nptr[i] == '-')
+			cnt_mns = -1;
 		i++;
 	}
-	return (i);
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		res = res * 10 + (nptr[i] - '0');
+		i++;
+	}
+	return (res * cnt_mns);
 }

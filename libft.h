@@ -6,7 +6,7 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 20:24:26 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 13:44:50 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/27 16:18:17 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,8 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char *strnstr(const char *big, const char *little, size_t len);
-
-
-//void	*memcpy(void *dest, const void *src, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
+int		ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif
