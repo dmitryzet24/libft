@@ -6,11 +6,14 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 11:23:23 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 12:27:47 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/27 18:53:28 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// The strchr() function returns a pointer to the first occurrence of the 
+// character c in the string s.
 
 char	*ft_strchr(const char *s, int c)
 {
