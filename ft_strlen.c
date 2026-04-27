@@ -6,7 +6,7 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:14:48 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/24 20:01:23 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/27 12:36:28 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ size_t	ft_strlen(const char *s)
 	{
 		i++;
 	}
-	return ();
+	return (i);
 }

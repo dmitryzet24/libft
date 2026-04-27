@@ -1,35 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 19:53:22 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 12:36:30 by dandrush         ###   ########.fr       */
+/*   Created: 2026/04/27 12:11:54 by dandrush          #+#    #+#             */
+/*   Updated: 2026/04/27 12:37:53 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
-	size_t	d_len;
-	size_t	s_len;
+	unsigned char	ch;
+	const char		*sl;
 
-	d_len = 0;
-	s_len = ft_strlen(src);
-	while (dst[d_len] && d_len < size)
-		d_len++;
-	if (d_len == size)
-		return (size + s_len);
-	i = 0;
-	while (src[i] && (d_len + i + 1) < size)
+	ch = (unsigned char)c;
+	sl = NULL;
+	while (1)
 	{
-		dst[d_len + i] = src[i];
-		i++;
+		if ((unsigned char)*s == ch)
+			sl = s;
+		if (*s == '\0')
+			break ;
+		s++;
 	}
-	dst[d_len + i] = '\0';
-	return (d_len + s_len);
+	return ((char *)sl);
 }
