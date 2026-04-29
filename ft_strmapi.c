@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 16:06:23 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/29 17:47:03 by dandrush         ###   ########.fr       */
+/*   Created: 2026/04/29 17:51:09 by dandrush          #+#    #+#             */
+/*   Updated: 2026/04/29 18:09:21 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//The  memset()  function  fills  the  first  n  bytes of 
-// the memory area
-// pointed to by s with the constant byte c.
-
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t			i;
-	unsigned char	*ptr;
+	char			*new_str;
+	size_t			length;
+	unsigned int	i;
 
+	if (!s || !f)
+		return (NULL);
+	length = ft_strlen(s) + 1;
+	new_str = (char *)malloc(sizeof(char) * (length));
+	if (!new_str)
+		return (NULL);
 	i = 0;
-	ptr = (unsigned char *)s;
-	while (i < n)
+	while (s[i] != '\0')
 	{
-		ptr[i] = (unsigned char)c;
+		new_str[i] = f(i, s[i]);
 		i++;
 	}
-	return (s);
+	new_str[i] = '\0';
+	return (new_str);
 }

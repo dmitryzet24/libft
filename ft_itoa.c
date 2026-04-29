@@ -6,38 +6,25 @@
 /*   By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 20:53:41 by dandrush          #+#    #+#             */
-/*   Updated: 2026/04/27 21:27:29 by dandrush         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:50:42 by dandrush         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <stdlib.h>
 
-size_t	count_len(int n)
+static size_t	count_len(long n)
 {
 	size_t	i;
-	long	n1;
 
 	i = 0;
-	n1 = (long)n;
-	if (n1 > 0)
+	if (n <= 0)
 	{
-		while (n1 > 0)
-		{
-			n1 /= 10;
-			i++;
-		}
-	}
-	else if (n1 == 0)
 		i = 1;
-	else
+		n = -n;
+	}
+	while (n > 0)
 	{
-		n1 *= -1;
-		while (n1 > 0)
-		{
-			n1 /= 10;
-			i++;
-		}
+		n /= 10;
 		i++;
 	}
 	return (i);
@@ -46,10 +33,26 @@ size_t	count_len(int n)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int		temp;
-	int		i;
-	
-	str = (char *)malloc(sizeof(char) * (count_len(n) + 1));
+	size_t	len;
+	long	nb;
+
+	nb = n;
+	len = count_len(nb);
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
+	str[len] = '\0';
+	if (nb == 0)
+		str[0] = '0';
+	if (nb < 0)
+	{
+		str[0] = '-';
+		nb = -nb;
+	}
+	while (nb > 0)
+	{
+		str[--len] = (nb % 10) + '0';
+		nb /= 10;
+	}
+	return (str);
 }
