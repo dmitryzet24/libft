@@ -66,7 +66,7 @@ The created library libft.a includes the following groups of functions:
 
 - [Article about File Descriptors](https://medium.com/@tharinduimalka915/linux-file-descriptors-ec945fd36893)
 
-- [Article about Linked Lists] (https://www.geeksforgeeks.org/c/linked-list-in-c/)
+- [Article about Linked Lists](https://www.geeksforgeeks.org/c/linked-list-in-c/)
 
 ## AI Usage Disclosure
 
