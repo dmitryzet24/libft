@@ -6,38 +6,52 @@
 #    By: dandrush <dandrush@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/22 18:20:13 by dandrush          #+#    #+#              #
-#    Updated: 2026/04/27 16:00:57 by dandrush         ###   ########.fr        #
+#    Updated: 2026/05/04 15:55:21 by dandrush         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-.PHONY: all clean fclean re test norm
-NAME = libft.a
-ALL_SRCS = $(wildcard *.c)
-TEST_SRC = main.c tests.c
-SRC = $(filter-out $(TEST_SRC), $(ALL_SRCS) )
-HEAD = libft.h
-OBJ = $(SRC:.c=.o)
-INCLUDES = -I.
-COMPILED = main.o tests.o a.out test_exec libft.h.gch
-# target: prequsitions
-# 	action
+NAME        = libft.a
+
+SRCS        = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
+				ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
+				ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c \
+				ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c \
+				ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
+				ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c \
+				ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c \
+				ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
+				ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
+				ft_lstnew.c ft_lstadd_front.c ft_lstsize.c *ft_lstlast.c \
+				ft_lstadd_back.c ft_lstdelone
+
+OBJS        = $(SRCS:.c=.o)
+
+CC          = cc
+CFLAGS      = -Wall -Wextra -Werror
+HEAD        = libft.h
+AR          = ar rcs
+RM          = rm -f
+
 all: $(NAME)
-$(NAME): $(OBJ)
-	ar rcs $@ $^
+
+$(NAME): $(OBJS)
+	$(AR) $(NAME) $(OBJS)
+
 
 %.o: %.c $(HEAD)
-	cc -c -Wall -Wextra -Werror $(INCLUDES) $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJS)
 
 fclean: clean
-	rm -f $(NAME) $(COMPILED)
+	$(RM) $(NAME)
 
-re: fclean 
+re: fclean all
 
 norm:
-	norminette libft.h $(SRC)
+	norminette $(HEAD) $(SRCS)
 
-test: all
-	cc -Wall -Wextra -Werror $(TEST_SRC) libft.a $(INCLUDES) -o test_exec
-	./test_exec
+.PHONY: all clean fclean re norm
+
+bonus: all
