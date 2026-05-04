@@ -12,13 +12,13 @@ The project focuses on understanding the internal mechanics of basic C tools, le
 
 The library is compiled using a Makefile. All source files are compiled with the -Wall -Wextra -Werror flags.
 
-...**make:** Compiles the mandatory functions and creates the libft.a library file.
+- **make:** Compiles the mandatory functions and creates the libft.a library file.
 
-...**make clean:** Removes all object files (.o).
+- **make clean:** Removes all object files (.o).
 
-...**make fclean:** Removes object files and the compiled library file (libft.a).
+- **make fclean:** Removes object files and the compiled library file (libft.a).
 
-...**make re:** Recompiles the entire project from scratch.
+- **make re:** Recompiles the entire project from scratch.
 
 ### Usage
 
@@ -39,34 +39,34 @@ cc main.c -L. -lft**
 
 The created library libft.a includes the following groups of functions:
 
-....*Character Checks (Libc): ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint.
+- *Character Checks (Libc): ft_isalpha, ft_isdigit, ft_isalnum, ft_isascii, ft_isprint.
 
-....*Character/String Conversion (Libc): ft_toupper, ft_tolower, ft_atoi, ft_itoa.
+- *Character/String Conversion (Libc): ft_toupper, ft_tolower, ft_atoi, ft_itoa.
 
-....*Memory Manipulation (Libc): ft_memset, ft_bzero, ft_memcpy, ft_memmove, ft_memchr, ft_memcmp, ft_calloc.
+- *Memory Manipulation (Libc): ft_memset, ft_bzero, ft_memcpy, ft_memmove, ft_memchr, ft_memcmp, ft_calloc.
 
-....*String Operations (Libc): ft_strlen, ft_strlcpy, ft_strlcat, ft_strchr, ft_strrchr, ft_strncmp, ft_strnstr, ft_strdup.
+- *String Operations (Libc): ft_strlen, ft_strlcpy, ft_strlcat, ft_strchr, ft_strrchr, ft_strncmp, ft_strnstr, ft_strdup.
 
-....*ft_substr, ft_strjoin, ft_strtrim — Creating and trimming strings.
+- *ft_substr, ft_strjoin, ft_strtrim — Creating and trimming strings.
 
-....*ft_split — Splitting a string into an array of strings based on a delimiter.
+- *ft_split — Splitting a string into an array of strings based on a delimiter.
 
-....*ft_strmapi, ft_striteri — Applying functions to each character of a string.
+- *ft_strmapi, ft_striteri — Applying functions to each character of a string.
 
-....*ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd — Outputting data to a specific file descriptor.
+- *ft_putchar_fd, ft_putstr_fd, ft_putendl_fd, ft_putnbr_fd — Outputting data to a specific file descriptor.
 
 ## Resources
 
-...**Man pages** — Official documentation for standard C functions.
+- **Man pages** — Official documentation for standard C functions.
 
-...**C Library Reference** — Practical examples of library functions.
+- **C Library Reference** — Practical examples of library functions.
 
 ## AI Usage Disclosure
 
 Artificial Intelligence (LLM) was utilized in this project for the following tasks:
 
-...**Debugging and Testing**: Analysis of tester logs (Francinette, libft-war-machine) to identify edge cases in complex functions like ft_atoi and ft_split.
+- **Debugging and Testing**: Analysis of tester logs (Francinette, libft-war-machine) to identify edge cases in complex functions like ft_atoi and ft_split.
 
-...**Documentation**: Assistance in structuring this README.md file to comply with the specific requirements of the 42 curriculum.
+- **Documentation**: Assistance in structuring this README.md file to comply with the specific requirements of the 42 curriculum.
 
-...**Makefile Optimization**: Guidance on setting up correct dependencies and rules for the library compilation process.
+- **Makefile Optimization**: Guidance on setting up correct dependencies and rules for the library compilation process.
