@@ -62,7 +62,7 @@ The created library libft.a includes the following groups of functions:
 
 - **Man pages** — Official documentation for standard C functions.
 
-- **C Library Reference** — Practical examples of library functions.
+- [C Library Reference](https://www.tutorialspoint.com/c_standard_library/index.htm "Practical examples of library functions")
 
 - [Article about File Descriptors](https://medium.com/@tharinduimalka915/linux-file-descriptors-ec945fd36893)
 
